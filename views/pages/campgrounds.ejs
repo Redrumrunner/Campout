@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ../partials/header %>
+<body>
+    <%include ../partials/nav %>
+<header>
+        <h1 class="text-center">Campgrounds</h1>
+        <h3 class="text-center">Some Filler Text</h3>
+</header>
+<div class=" campground-grid container pt-4">
+    <div class="row">
+            <% campgrounds.forEach(function(campgrounds){ %>
+                <div class="campground-inner col-lg-4 sm-2">
+                    <div class="card">
+                            <img class="card-img-top" src="<%= campgrounds.image %>" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"><%= campgrounds.name %></h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+    </div>
+</div>
+<div class="container text-center p-3">
+        <a href="/campgrounds/create" class="btn btn-primary btn-lg text-center">Create New Campground</a>
+</div>
+<div class="container page-nav">
+        <% include ../partials/page-nav %>
+</div>
+
+<% include ../partials/footer %>
+<% include ../partials/scripts %>
+</body>
+</html>

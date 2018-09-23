@@ -1,0 +1,72 @@
+body, html {
+    height:100%;
+    background:white;
+}
+
+.hero {
+    background:url('./images/nathan-anderson-111072-unsplash.jpg');
+    background-size: cover;
+    background-position: 40%;
+    padding-top: 10px;
+    height: 570px;
+    width:100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+.hero-header {
+    text-align:center;
+}
+.campout {
+    font-size:120px;
+
+    margin:0 auto;
+    padding:0 auto;
+}
+
+.hero-button {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.content{
+    padding-top:5%;
+    display: flex;
+    text-align:center;
+    color:black;
+    background-color:grey;
+}
+
+.card {
+    width: 22rem;
+    margin-top:10px;
+}
+
+.card img {
+    height:300px;
+    width:350px;
+}
+.landing-main {
+    height: 570px;
+    width:100%;
+    margin:0 auto;
+    padding-left: 10%;
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    background-color: grey;
+}
+.page-nav {
+    display:flex;
+    justify-content: center;
+}
+
+.form-content {
+    align-content: center;
+    text-align:center;
+    width:30%;
+    margin:0 auto;
+    justify-content: center;
+}
